@@ -8,7 +8,7 @@ module full_adder (
     output Cout       // Output carry
 );
 
-    assign S = A ^ B ^ Cin;                      // XOR for Sum
-    assign Cout = (A & B) | (Cin & (A ^ B));     // Logic for Carry Out
+    assign S = A ^ B ^ Cin;                      
+    assign Cout = (A & B) | (Cin & (A ^ B));     
 
 endmodule
