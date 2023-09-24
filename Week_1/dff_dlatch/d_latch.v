@@ -7,8 +7,8 @@ module d_latch (
     output reg [15:0] Q
 );
 
-always @(clk, D) begin
-    if (!resetn) begin
+always @ (posedge resetn,D, byteena) begin
+    if (resetn) begin
         Q <= 16'b0;
     end else begin
         if (byteena[1]) begin
