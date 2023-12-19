@@ -1,1 +1,1 @@
-# verilog_1
+# verilog assignments of DELTA LAB
